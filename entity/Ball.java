@@ -1,8 +1,13 @@
 package com.harthoric.brickbreaker.entity;
 
+import com.harthoric.brickbreaker.util.Vector2D;
+
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+
 public class Ball {
 
-  // Amount the ball increases each time it hits a brick
+	// Amount the ball increases each time it hits a brick
 	private final float ACCELERATION;
 	private Vector2D velocity, position;
 
@@ -15,7 +20,7 @@ public class Ball {
 		this.ball = ball;
 	}
 
-  public Vector2D getVelocity() {
+	public Vector2D getVelocity() {
 		return velocity;
 	}
 
